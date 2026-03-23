@@ -1,0 +1,79 @@
+
+\documentclass[letterpaper, 11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+\usepackage{ragged2e}
+\pagestyle{empty}
+
+% My packages
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+% \definecolor{midnightblue}{rgb}{0.1, 0.1, 0.44}
+\hypersetup{colorlinks,breaklinks,urlcolor=MidnightBlue}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+\boldname{Zorrilla Gamboa}{Jon}{N.}
+
+\begin{document}
+
+% Heading
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{\textcolor{MidnightBlue}{Jon Zorrilla Gamboa}} \\[7.5pt]
+\textcolor{MidnightBlue}{Data Scientist} \\[7.5pt]
+
+\href{https://linkedin.com/in/jonzg}{\raisebox{-0.05\height}\faLinkedin\ Jonzg} \ $|$ \ 
+\href{https://github.com/jonzg}{\raisebox{-0.05\height}\faGithub\ Jonzg} \ $|$ \ 
+\href{mailto:jon.zorrilla03@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ jon.zorrilla03@gmail.com} \ $|$ \
+\href{callto:+34 660 37 85 86}{\raisebox{-0.05\height}\faPhone \ +34 660 37 85 86} \  \ 
+\end{tabularx}
+% \headinginline{Jon Zorrilla Gamboa}{
+%     % Website: \website{example.com} \\ 
+%     Email: \email{jon.zorrilla03@gmail.com} \\
+%     LinkedIn: \linkedin{Jonzg} \\
+%     GitHub: \github{Jonzg}
+% }
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\ 
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+
+\justify
+Data Scientist with a Physics background and MSc in Data Science, experienced in developing, deploying, and monitoring ML and DL models with MLflow, FastAPI, and MLOps practices. Skilled in machine learning, deep learning, and time series forecasting, with proven experience delivering scalable and interpretable AI solutions across scientific and industrial domains.
+
+Passionate about driving data-driven innovation through robust experimentation, automation, and reproducible ML workflows.
+
+% Page One
+\import{sections/}{experience.tex}
+\import{sections/}{education.tex}
+\import{sections/}{courses.tex}
+% \import{sections/}{publications.tex}
+
+% \pagebreak
+
+% Page Two
+% \import{sections/}{teaching.tex}
+\sidebyside
+    {\import{sections/}{skills.tex}}
+    {\import{sections/}{languages.tex}}
+% \import{sections/}{projects.tex}
+% \import{sections/}{awards.tex}
+% \import{sections/}{extracurricular.tex}
+
+\end{document}
