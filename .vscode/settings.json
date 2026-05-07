@@ -1,0 +1,14 @@
+{
+    "latex-workshop.latex.rootFile.useSubFileAsRoot": false,
+    "latex-workshop.latex.rootFile.doNotPrompt": true,
+    "latex-workshop.latex.outDir": "%DIR%",
+    "latex-workshop.latex.watch.files.ignore": [],
+    "latex-workshop.latex.build.forceRecipeUsage": false,
+    "latex-workshop.latex.rootFile.indicator": "main.tex",
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "sh",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-c",
+        "explorer.exe $(wslpath -w '%PDF%')"
+    ]
+}
